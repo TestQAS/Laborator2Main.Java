@@ -12,3 +12,9 @@ public class Main {
 
 
 }
+  //int first =
+  //int second
+ //if (first>second)
+//system.outprintln(first)
+//else if (first == second)
+//system.out.println(they are equal)

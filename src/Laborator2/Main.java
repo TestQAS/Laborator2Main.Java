@@ -20,6 +20,10 @@ public class Main {
         System.out.println("-Rezultat Exercitiu 6: ");
         System.out.println("-Remainder: " + modulo(7, 3));
 
+        //C= 5/9 * (F -32)
+        //public static float get celsius (float fahrenheit)
+        //System.out.pritnln(Celsius value is" + getCelsius(fahrenheit 100)");
+
 
     }
 
@@ -61,7 +65,7 @@ public class Main {
         System.out.println("FFFFF    AAA AAA      SSSSSSSSS       TTT        TTT     RRRRRR         AAA AAA    CCC          KKK       IT    TT");
         System.out.println("FFF     AAAAAAAAA      SSSSSSSSS      TTT        TTT     RR RRR        AAAAAAAAA    CCC         KKK       IT    TT");
         System.out.println("FFF    AAAAAAAAAAA         SSSSS      TTT        TTT     RR   RRR     AAAAAAAAAAA     CCCC      KK  KK    IT    TT");
-        System.out.println("FFF   AAAAA   AAAAA   SSSSSSSSS       TTT        TTT     RR    RRR   AAAAA  AAAAAA       CCCCC  KK    KK  IT    TT");
+        System.out.println("FFF   AAAAA   AAAAA   SSSSSSSSS       TTT        TTT     RR    RRR   AAAAA   AAAAA       CCCCC  KK    KK  IT    TT");
     }
 
     //Exercitiul 4
