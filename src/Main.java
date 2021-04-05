@@ -1,6 +1,14 @@
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-   System.out.println("Hello_world!");}
+
+        System.out.println("Hello");
+        System.out.println("Hello Alin!");
+        System.out.println(24 + 26);
+        System.out.println(10 / 3f);
+        System.out.println((55 + 9) % 9);
+        System.out.println(20 + -3 * 5 / 8f);
+        System.out.println(5 + 15 / 3 * 2 - 8 % 3);}
+
+
 }
