@@ -19,11 +19,9 @@ public class Main {
         printMyDog();
         System.out.println("-Rezultat Exercitiu 6: ");
         System.out.println("-Remainder: " + modulo(7, 3));
-
-        //C= 5/9 * (F -32)
-        //public static float get celsius (float fahrenheit)
-        //System.out.pritnln(Celsius value is" + getCelsius(fahrenheit 100)");
-
+        System.out.println("-Rezultat Exercitiu 8: " + celsiusTemp(70));
+        System.out.println("-Rezultate Exercitiu 9: " + inchToMeters(5));
+       viteza(10, 1, 30, 15);
 
     }
 
@@ -59,13 +57,13 @@ public class Main {
     //Exercitul 3
     public static void printMyLogo() {
 
-        System.out.println("FFFFFFFFF   A           SSSSSSSS   TTTTTTTTTTTTTTTTTTTT  RRRRRRR           A              CCCCCCCCCCCCCCCCCCCCCCCCCCC");
-        System.out.println("FFF        AAA        SSSSSSSSSS    TTTTTTTTTTTTTTTTTT   RR   RRR         AAA          CCCCCCCCCCCCCCCKK  IT TTTTTTTT");
-        System.out.println("FFF       AAAAA       SSSS            TTT        TTT     RRRRRRR         AAAAA       CCC        KK  KK          TT");
+        System.out.println("FFFFFFFFFFFFA           SSSSSSSSTTTTTTTTTTTTTTTTTTTTTTTTTRRRRRRRR          A              CCCCCCCCCCCCCCCCCCCCCCCCCCC");
+        System.out.println("FFF        AAA        SSSSSSSSSS    TTTTTTTTTTTTTTTTTT   RR    RRR        AAA          CCCCCCCCCCCCCCCKK  IT TTTTTTTT");
+        System.out.println("FFF       AAAAA       SSSS            TTT        TTT     RRRRRRR=========AAAAA=======CCC        KK  KK          TT");
         System.out.println("FFFFF    AAA AAA      SSSSSSSSS       TTT        TTT     RRRRRR         AAA AAA    CCC          KKK       IT    TT");
-        System.out.println("FFF     AAAAAAAAA      SSSSSSSSS      TTT        TTT     RR RRR        AAAAAAAAA    CCC         KKK       IT    TT");
+        System.out.println("FFF     AAAAAAAAA      SSSSSSSSS      TTT        TTT     RR RRR========AAAAAAAAA====CCC         KKK       IT    TT");
         System.out.println("FFF    AAAAAAAAAAA         SSSSS      TTT        TTT     RR   RRR     AAAAAAAAAAA     CCCC      KK  KK    IT    TT");
-        System.out.println("FFF   AAAAA   AAAAA   SSSSSSSSS       TTT        TTT     RR    RRR   AAAAA   AAAAA       CCCCC  KK    KK  IT    TT");
+        System.out.println("FFF   AAAAA   AAAAASSSSSSSSSSSS       TTT        TTT     RR    RRR   AAAAA   AAAAA       CCCCC  KK    KK  IT    TT");
     }
 
     //Exercitiul 4
@@ -89,4 +87,36 @@ public class Main {
         float result = first % second;
         return result;
     }
+
+
+        //Exercitiul 8
+
+    public static double celsiusTemp(double fahrenheit)
+    {
+        double result = (fahrenheit - 32) / 1.8;
+        return result;
+    }
+
+    //Exercitiul 9
+
+    public static double inchToMeters(double inch)
+    {
+        double result = inch * 0.0254;
+        return result;
+    }
+
+    //Exercitiul 10
+
+    public static void viteza(float meters, int hours, int minutes, int seconds) {
+        float speedMs = meters / (seconds + minutes * 60f + hours * 3600f);
+        float kMh = (meters/1000)/(hours+ 1/60*minutes+1/3600*seconds);
+        float miles = (meters/1609)/(hours+ 1/60*minutes+1/3600*seconds);
+        System.out.println( "speed Ms:"+ speedMs);
+        System.out.println("kMh:"+ kMh);
+        System.out.println("MilesH: "+ miles);
+
+    }
 }
+
+
+
