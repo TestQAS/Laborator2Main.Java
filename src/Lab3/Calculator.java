@@ -1,4 +1,4 @@
-package lab3;
+package Lab3;
 public class Calculator {
 
 public int addition(int first, int second) {

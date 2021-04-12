@@ -1,6 +1,4 @@
-package lab3;
-
-import java.sql.SQLOutput;
+package Lab3;
 
 public class LogicalOp {
 
