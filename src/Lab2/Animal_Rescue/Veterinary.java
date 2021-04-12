@@ -1,4 +1,4 @@
-package Laborator2.Animal_Rescue;
+package Lab2.Animal_Rescue;
 
 public class Veterinary {
 
