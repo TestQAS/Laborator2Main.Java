@@ -1,5 +1,6 @@
 package for_while;
 
+import javax.swing.text.html.parser.Parser;
 import java.sql.SQLOutput;
 
 public class LogicalOp {
@@ -138,7 +139,7 @@ public class LogicalOp {
         System.out.println("Sum/count by 7: "+ adition/count);
     }
 
-    public void FiboncSeqence() {
+   /* public void FiboncSeqence() {
         int count =3;// de unde in sir va incepe sa numere pana la valoarea de 20 data
         int i=0;
         int j=1;
@@ -150,7 +151,137 @@ public class LogicalOp {
             System.out.print(x+" ");
             i = j;
             j=x;
-            count++;
+            count++;*/
+
+
+    public void FiboncSequence() {
+
+        int count = 20;
+
+        int num1 = 0;
+
+        int num2 = 1;
+
+
+
+        int i=1;
+
+        while(i<=count)
+
+        {
+
+            System.out.print(num1+" ");
+
+            int sumOfPrevTwo = num1 + num2;
+
+            num1 = num2;
+
+            num2 = sumOfPrevTwo;
+
+            i++;
+
         }
     }
+   /* Creati o metoda numita CozaLozaWoza.
+
+    Metoda va afisa:
+
+            - numerele de la 1 la 110
+
+            - 11 numere pe linie
+
+- se va afisa Coza pentru numerele care sunt multiplu de 3 (1 2 Coza 4)
+
+            - se va afisa Loza pentru numerele care sunt multiplu de 5 (2 3 4 Loza 6)
+
+            - se va afisa Woza pentru numerele care sunt multiplu de 7 (4 5 6 Woza 8)
+
+            - se va afisa CozaLoza pentru numerele care sunt multiplu de 3 SI 5
+
+            - se va afisa CozaWoza pentru multiplu de 3 SI 7
+
+            - se va afisa WozaLoza pentru multiplu de 5 SI 7
+
+            - se va afisa CozaLozaWoza pentru multiplu de 3 SI 5 SI 7
+
+    Ar trebui sa arate similar:
+
+            1 2 Coza 4 Loza Coza Woza 8 Coza Loza 11
+
+    Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22
+
+            23 Coza Loza 26 Coza Woza 29 CozaLoza 31 32 Coza
+
+
+......*/
+       public void wzCzLz() {
+
+           int count =1;
+           String  word = "";
+           do {int countJ =1;
+
+               while (countJ <=11) {word = String.valueOf(count);
+
+                   if (count % 3 ==0 ){
+                       word =" Coza ";
+                   }
+                   if (count % 5 ==0 ){
+                       word =" Loza ";
+                   }
+                   if (count % 7 ==0 ){
+                       word =" Woza ";}
+                   if (count % 3 ==0 && count % 5 ==0){
+                       word =" CozaLoza ";}
+                   if (count % 3 ==0 && count % 7 ==0){
+                       word= " CozaWoza ";}
+                   if (count % 5 ==0 && count % 7 ==0){
+                       word = " WozaLoza ";}
+                   if (count % 3 ==0 && count % 5 ==0 && count % 7==0)
+                   {
+                       word =" CozaLozaWoza "; }
+                   System.out.print (" " + word);
+                   countJ++;
+                     count++;}
+               System.out.println();
+           }while (count <=110);
+
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
