@@ -4,9 +4,7 @@ public class AppMain {
     public static void main(String[] args) {
 
         Dog mooky = new Dog();
-        System.out.println(mooky.weight);
         mooky.eat(2);
-        System.out.println(mooky.weight);
         Girl Amy =new Girl();
         System.out.println(Amy.age);
         PlayingRoutine playtime = new PlayingRoutine();
